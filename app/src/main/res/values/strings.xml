@@ -1,0 +1,34 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">World Cup Quiz</string>
+    <string name="question_1">When was the first world cup held?</string>
+    <string name="question_2">How many world cup trophies have ever been made?</string>
+    <string name="question_3">Which country has the most successful team?</string>
+    <string name="question_4">Mark countries that have host the world cup</string>
+    <string name="question_5">How many matches are played in the current version of the football world cup?</string>
+    <string name="answers_correct">You got all the answers correct</string>
+    <string name="answers_incorrect">You got only <xliff:g id="correct" example="3">%d</xliff:g> out of <xliff:g id="total" example="5">%d</xliff:g></string>
+    <string name="hint_year">Year</string>
+    <string name="submit">Submit</string>
+    <string name="subtract">-</string>
+    <string name="quantity_trophies">1</string>
+    <string name="add">+</string>
+    <string name="info_image_description">Correct or wrong image</string>
+    <string name="trophy_1">At least 1 trophy exists</string>
+    <string name="trophy_50">That\'s a lot of trophies you got there</string>
+    <string name="match_60">Those are very few matches</string>
+    <string name="match_70">Those are very many matches for one competition</string>
+    <string name="uruguay">Uruguay</string>
+    <string name="argentina">Argentina</string>
+    <string name="germany">Germany</string>
+    <string name="costa_rica">Costa Rica</string>
+    <string name="brazil">Brazil</string>
+    <string name="france">France</string>
+    <string name="belgium">Belgium</string>
+    <string name="mexico">Mexico</string>
+    <string name="sweden">Sweden</string>
+    <string name="portugal">Portugal</string>
+    <string name="spain">Spain</string>
+    <string name="russia">Russia</string>
+    <string name="quantity_matches">60</string>
+    <string name="trophy_img">Trophy image</string>
+</resources>
