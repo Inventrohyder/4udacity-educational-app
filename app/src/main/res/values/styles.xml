@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--Base CardView theme-->
+    <style name="CardViewTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/cardView_height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:onClick">raise</item>
+    </style>
+
 </resources>
