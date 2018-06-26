@@ -6,4 +6,7 @@
 
     <color name="correct">#00C853</color>
     <color name="incorrect">#D50000</color>
+
+    <!--Question text color-->
+    <color name="question_color">#616161</color>
 </resources>
