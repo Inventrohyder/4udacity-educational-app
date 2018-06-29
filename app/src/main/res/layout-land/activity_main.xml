@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alignmentMode="alignMargins"
-            android:columnCount="1"
+            android:columnCount="2"
             android:columnOrderPreserved="false"
             android:rowCount="3">
 

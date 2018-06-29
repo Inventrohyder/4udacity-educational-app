@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -6,6 +6,38 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Base CardView theme-->
+    <style name="CardViewTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/cardView_height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:onClick">raise</item>
+    </style>
+
+    <!--Question TextView theme-->
+    <style name="QuestionTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/question_color</item>
+    </style>
+
+    <!--Base CardView theme for landscape orientation-->
+    <style name="CardViewThemeLand"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/cardView_height</item>
+        <item name="android:layout_columnWeight" tools:ignore="NewApi">1</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:onClick">raise</item>
     </style>
 
 </resources>
