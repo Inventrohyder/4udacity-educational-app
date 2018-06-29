@@ -4,9 +4,11 @@
     <string name="question_2">How many world cup trophies have ever been made?</string>
     <string name="question_3">Which country has the most successful team?</string>
     <string name="question_4">Mark countries that have host the world cup</string>
-    <string name="question_5">How many matches are played in the current version of the football world cup?</string>
+    <string name="question_5">How many matches are played in the current version of the football
+        world cup?</string>
     <string name="answers_correct">You got all the answers correct</string>
-    <string name="answers_incorrect">You got only <xliff:g id="correct" example="3">%d</xliff:g> out of <xliff:g id="total" example="5">%d</xliff:g></string>
+    <string name="answers_incorrect">You got only <xliff:g id="correct" example="3">%d</xliff:g> of
+        <xliff:g id="total" example="5">%d</xliff:g></string>
     <string name="hint_year">Year</string>
     <string name="submit">Submit</string>
     <string name="subtract">-</string>
