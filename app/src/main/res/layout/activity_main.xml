@@ -1,25 +1,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
 
-        <LinearLayout
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
 
             <android.support.v7.widget.CardView
-                style="@style/CardViewTheme"
-                card_view:cardCornerRadius="@dimen/cardView_cornerRadius"
-                card_view:cardElevation="@dimen/cardView_elevation">
+                style="@style/CardViewThemeLand"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="@dimen/cardView_cornerRadius"
+                app:cardElevation="@dimen/cardView_elevation">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -45,9 +49,10 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                style="@style/CardViewTheme"
-                card_view:cardCornerRadius="@dimen/cardView_cornerRadius"
-                card_view:cardElevation="@dimen/cardView_elevation">
+                style="@style/CardViewThemeLand"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="@dimen/cardView_cornerRadius"
+                app:cardElevation="@dimen/cardView_elevation">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -111,9 +116,9 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                style="@style/CardViewTheme"
-                card_view:cardCornerRadius="@dimen/cardView_cornerRadius"
-                card_view:cardElevation="@dimen/cardView_elevation">
+                style="@style/CardViewThemeLand"
+                app:cardCornerRadius="@dimen/cardView_cornerRadius"
+                app:cardElevation="@dimen/cardView_elevation">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -129,8 +134,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
                         android:layout_marginBottom="16dp"
                         android:layout_marginLeft="16dp"
                         android:layout_marginStart="16dp"
@@ -222,9 +225,9 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                style="@style/CardViewTheme"
-                card_view:cardCornerRadius="@dimen/cardView_cornerRadius"
-                card_view:cardElevation="@dimen/cardView_elevation">
+                style="@style/CardViewThemeLand"
+                app:cardCornerRadius="@dimen/cardView_cornerRadius"
+                app:cardElevation="@dimen/cardView_elevation">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -236,99 +239,93 @@
                         android:text="@string/question_4" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:baselineAligned="false"
-                        android:orientation="horizontal">
+                        android:orientation="vertical"
+                        android:paddingBottom="16dp"
+                        android:paddingEnd="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp"
+                        android:paddingStart="16dp">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                        <CheckBox
+                            android:id="@+id/check_belgium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:paddingBottom="16dp"
-                            android:paddingEnd="8dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="8dp"
-                            android:paddingStart="16dp">
+                            android:drawableLeft="@drawable/bel"
+                            android:drawableStart="@drawable/bel"
+                            android:text="@string/belgium"
+                            android:textSize="12sp"
+                            tools:ignore="NestedWeights" />
 
-                            <CheckBox
-                                android:id="@+id/check_belgium"
-                                android:layout_width="wrap_content"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                android:drawableLeft="@drawable/bel"
-                                android:drawableStart="@drawable/bel"
-                                android:text="@string/belgium"
-                                android:textSize="12sp"
-                                tools:ignore="NestedWeights" />
-
-                            <CheckBox
-                                android:id="@+id/check_mexico"
-                                android:layout_width="wrap_content"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                android:drawableLeft="@drawable/mex"
-                                android:drawableStart="@drawable/mex"
-                                android:text="@string/mexico"
-                                android:textSize="12sp" />
-
-                            <CheckBox
-                                android:id="@+id/check_sweden"
-                                android:layout_width="wrap_content"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                android:drawableLeft="@drawable/swe"
-                                android:drawableStart="@drawable/swe"
-                                android:text="@string/sweden"
-                                android:textSize="12sp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                        <CheckBox
+                            android:id="@+id/check_mexico"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:paddingBottom="16dp"
-                            android:paddingEnd="16dp"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="16dp"
-                            android:paddingStart="8dp">
+                            android:drawableLeft="@drawable/mex"
+                            android:drawableStart="@drawable/mex"
+                            android:text="@string/mexico"
+                            android:textSize="12sp" />
 
-                            <CheckBox
-                                android:id="@+id/check_russia"
-                                android:layout_width="wrap_content"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                android:drawableLeft="@drawable/rus"
-                                android:drawableStart="@drawable/rus"
-                                android:text="@string/russia"
-                                android:textSize="12sp"
-                                tools:ignore="NestedWeights" />
+                        <CheckBox
+                            android:id="@+id/check_sweden"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/swe"
+                            android:drawableStart="@drawable/swe"
+                            android:text="@string/sweden"
+                            android:textSize="12sp" />
 
-                            <CheckBox
-                                android:id="@+id/check_portugal"
-                                android:layout_width="wrap_content"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                android:drawableLeft="@drawable/por"
-                                android:drawableStart="@drawable/por"
-                                android:text="@string/portugal"
-                                android:textSize="12sp" />
+                    </LinearLayout>
 
-                            <CheckBox
-                                android:id="@+id/check_spain"
-                                android:layout_width="wrap_content"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                android:drawableLeft="@drawable/esp"
-                                android:drawableStart="@drawable/esp"
-                                android:text="@string/spain"
-                                android:textSize="12sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="16dp"
+                        android:paddingStart="8dp"
+                        tools:ignore="RelativeOverlap">
 
-                        </LinearLayout>
+                        <CheckBox
+                            android:id="@+id/check_russia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/rus"
+                            android:drawableStart="@drawable/rus"
+                            android:text="@string/russia"
+                            android:textSize="12sp"
+                            tools:ignore="NestedWeights" />
+
+                        <CheckBox
+                            android:id="@+id/check_portugal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/por"
+                            android:drawableStart="@drawable/por"
+                            android:text="@string/portugal"
+                            android:textSize="12sp" />
+
+                        <CheckBox
+                            android:id="@+id/check_spain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/esp"
+                            android:drawableStart="@drawable/esp"
+                            android:text="@string/spain"
+                            android:textSize="12sp" />
 
                     </LinearLayout>
 
@@ -337,10 +334,9 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                style="@style/CardViewTheme"
-                android:layout_marginBottom="16dp"
-                card_view:cardCornerRadius="@dimen/cardView_cornerRadius"
-                card_view:cardElevation="@dimen/cardView_elevation">
+                style="@style/CardViewThemeLand"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="1dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -393,7 +389,8 @@
 
             </android.support.v7.widget.CardView>
 
-        </LinearLayout>
+        </GridLayout>
+
     </ScrollView>
 
     <LinearLayout
@@ -410,4 +407,5 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#9e9e9e" />
     </LinearLayout>
+
 </LinearLayout>
